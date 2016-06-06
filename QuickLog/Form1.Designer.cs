@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.ui_newLog = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.ui_history = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -45,15 +45,6 @@
             this.panel1.Size = new System.Drawing.Size(317, 19);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.ui_history);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 19);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(317, 248);
-            this.panel2.TabIndex = 1;
-            // 
             // ui_newLog
             // 
             this.ui_newLog.BackColor = System.Drawing.Color.Gray;
@@ -64,7 +55,17 @@
             this.ui_newLog.Name = "ui_newLog";
             this.ui_newLog.Size = new System.Drawing.Size(317, 22);
             this.ui_newLog.TabIndex = 0;
+            this.ui_newLog.DoubleClick += new System.EventHandler(this.ui_newLog_DoubleClick);
             this.ui_newLog.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ui_newLog_KeyUp);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.ui_history);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(317, 248);
+            this.panel2.TabIndex = 1;
             // 
             // ui_history
             // 
@@ -76,6 +77,8 @@
             this.ui_history.Name = "ui_history";
             this.ui_history.Size = new System.Drawing.Size(317, 248);
             this.ui_history.TabIndex = 0;
+            this.ui_history.DoubleClick += new System.EventHandler(this.ui_newLog_DoubleClick);
+            this.ui_history.Enter += new System.EventHandler(this.ui_history_Enter);
             // 
             // Form1
             // 
