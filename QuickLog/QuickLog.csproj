@@ -106,7 +106,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Content Include="log-icon.ico" />
-    <Content Include="LOG.ico" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
