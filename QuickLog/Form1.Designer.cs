@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ui_newLog = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,7 +48,7 @@
             // 
             // ui_newLog
             // 
-            this.ui_newLog.BackColor = System.Drawing.Color.Gray;
+            this.ui_newLog.BackColor = System.Drawing.Color.Black;
             this.ui_newLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ui_newLog.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ui_newLog.ForeColor = System.Drawing.Color.Orange;
@@ -91,6 +92,7 @@
             this.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Orange;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Log";
